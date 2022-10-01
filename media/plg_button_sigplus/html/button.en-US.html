@@ -1,0 +1,611 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../css/button.css?v=63d647f934b0d11254ed00946b94bf8e" type="text/css" />
+<script type="text/javascript" src="../js/button.min.js?v=b4a4330b7fd360ea89349fe0a1b76b8a"></script>
+</head>
+<body>
+<form id="sigplus-settings-form">
+<button id="sigplus-settings-submit" class="btn btn-primary" type="button">Insert</button>
+<h3>Basic settings</h3><fieldset class="panelform">
+<ul>
+<li class="formelm"><label id="params_layout-lbl" for="params_layout">
+    Gallery layout</label>
+<select id="params_layout" name="params[layout]" class="form-select" aria-describedby="params_layout-desc">
+	<option value="fixed" selected="selected">fixed (with rotator)</option>
+	<option value="flow">flow (without rotator)</option>
+	<option value="packed">packed (without rotator)</option>
+	<option value="hidden">hidden</option>
+</select>
+</li>
+<li class="formelm"><label id="params_rows-lbl" for="params_rows">
+    Image row count</label>
+
+
+    
+    <input
+        type="text"
+        name="params[rows]"
+        id="params_rows"
+        value="1"
+                class="form-control"  aria-describedby="params_rows-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_cols-lbl" for="params_cols">
+    Image column count</label>
+
+
+    
+    <input
+        type="text"
+        name="params[cols]"
+        id="params_cols"
+        value="3"
+                class="form-control"  aria-describedby="params_cols-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_maxcount-lbl" for="params_maxcount">
+    Maximum image count</label>
+
+
+    
+    <input
+        type="text"
+        name="params[maxcount]"
+        id="params_maxcount"
+        value="0"
+                class="form-control"  aria-describedby="params_maxcount-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_alignment-lbl" for="params_alignment">
+    Alignment on page</label>
+<select id="params_alignment" name="params[alignment]" class="form-select" aria-describedby="params_alignment-desc">
+	<option value="before-clear">left</option>
+	<option value="before-float">left (with text wrapping around)</option>
+	<option value="center" selected="selected">center</option>
+	<option value="after-clear">right</option>
+	<option value="after-float">right (with text wrapping around)</option>
+</select>
+</li>
+<li class="formelm"><label id="params_preview_width-lbl" for="params_preview_width">
+    Preview image width</label>
+
+
+    
+    <input
+        type="text"
+        name="params[preview_width]"
+        id="params_preview_width"
+        value="200"
+                class="form-control"  aria-describedby="params_preview_width-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_preview_height-lbl" for="params_preview_height">
+    Preview image height</label>
+
+
+    
+    <input
+        type="text"
+        name="params[preview_height]"
+        id="params_preview_height"
+        value="200"
+                class="form-control"  aria-describedby="params_preview_height-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_preview_crop-lbl" for="params_preview_crop">
+    Crop when rescaling</label>
+<fieldset id="params_preview_crop">
+    <legend class="visually-hidden">
+        Crop when rescaling    </legend>
+    <div class="radio">
+                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_preview_crop0" name="params[preview_crop]" value="1" >
+                <label for="params_preview_crop0" class="form-check-label">
+                    Yes                </label>
+            </div>                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_preview_crop1" name="params[preview_crop]" value="0" checked="checked">
+                <label for="params_preview_crop1" class="form-check-label">
+                    No                </label>
+            </div>            </div>
+</fieldset>
+</li>
+<li class="formelm"><label id="params_lightbox-lbl" for="params_lightbox">
+    Lightbox pop-up type</label>
+<select id="params_lightbox" name="params[lightbox]"  class="form-select">
+		<option value="none">none</option>
+	<optgroup label="boxplus">
+		<option value="boxplus/light" selected="selected">boxplus light theme</option>
+		<option value="boxplus/dark">boxplus dark theme</option>
+	</optgroup>
+		<option value="fancybox">FancyBox (with jQuery)</option>
+		<option value="fancybox3">FancyBox3 (with jQuery)</option>
+		<option value="hoverplus">hoverplus (with MooTools)</option>
+		<option value="slimbox2">Slimbox2 (with jQuery)</option>
+		<option value="bootstrap">Bootstrap (with jQuery)</option>
+</select>
+</li>
+<li class="formelm"><label id="params_lightbox_autocenter-lbl" for="params_lightbox_autocenter">
+    Center on scroll</label>
+<fieldset id="params_lightbox_autocenter">
+    <legend class="visually-hidden">
+        Center on scroll    </legend>
+    <div class="radio">
+                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_lightbox_autocenter0" name="params[lightbox_autocenter]" value="1" checked="checked">
+                <label for="params_lightbox_autocenter0" class="form-check-label">
+                    Yes                </label>
+            </div>                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_lightbox_autocenter1" name="params[lightbox_autocenter]" value="0" >
+                <label for="params_lightbox_autocenter1" class="form-check-label">
+                    No                </label>
+            </div>            </div>
+</fieldset>
+</li>
+<li class="formelm"><label id="params_lightbox_autofit-lbl" for="params_lightbox_autofit">
+    Fit to window</label>
+<fieldset id="params_lightbox_autofit">
+    <legend class="visually-hidden">
+        Fit to window    </legend>
+    <div class="radio">
+                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_lightbox_autofit0" name="params[lightbox_autofit]" value="1" checked="checked">
+                <label for="params_lightbox_autofit0" class="form-check-label">
+                    Yes                </label>
+            </div>                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_lightbox_autofit1" name="params[lightbox_autofit]" value="0" >
+                <label for="params_lightbox_autofit1" class="form-check-label">
+                    No                </label>
+            </div>            </div>
+</fieldset>
+</li>
+<li class="formelm"><label id="params_lightbox_thumbs-lbl" for="params_lightbox_thumbs">
+    Lightbox navigation bar</label>
+<select id="params_lightbox_thumbs" name="params[lightbox_thumbs]" class="form-select" aria-describedby="params_lightbox_thumbs-desc">
+	<option value="inside" selected="selected">Overlaying image</option>
+	<option value="outside">In caption area</option>
+	<option value="none">Hide</option>
+</select>
+</li>
+<li class="formelm"><label id="params_lightbox_slideshow-lbl" for="params_lightbox_slideshow">
+    Slideshow delay [ms]</label>
+
+
+    
+    <input
+        type="text"
+        name="params[lightbox_slideshow]"
+        id="params_lightbox_slideshow"
+        value="0"
+                class="form-control"  aria-describedby="params_lightbox_slideshow-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_lightbox_autostart-lbl" for="params_lightbox_autostart">
+    Autostart slideshow</label>
+<fieldset id="params_lightbox_autostart">
+    <legend class="visually-hidden">
+        Autostart slideshow    </legend>
+    <div class="radio">
+                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_lightbox_autostart0" name="params[lightbox_autostart]" value="1" >
+                <label for="params_lightbox_autostart0" class="form-check-label">
+                    Yes                </label>
+            </div>                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_lightbox_autostart1" name="params[lightbox_autostart]" value="0" checked="checked">
+                <label for="params_lightbox_autostart1" class="form-check-label">
+                    No                </label>
+            </div>            </div>
+</fieldset>
+</li>
+<li class="formelm"><label id="params_rotator_orientation-lbl" for="params_rotator_orientation">
+    Image rotator orientation</label>
+<select id="params_rotator_orientation" name="params[rotator_orientation]" class="form-select" aria-describedby="params_rotator_orientation-desc">
+	<option value="horizontal" selected="selected">horizontal</option>
+	<option value="vertical">vertical</option>
+</select>
+</li>
+<li class="formelm"><label id="params_rotator_buttons-lbl" for="params_rotator_buttons">
+    Hotspot navigation</label>
+<fieldset id="params_rotator_buttons">
+    <legend class="visually-hidden">
+        Hotspot navigation    </legend>
+    <div class="radio">
+                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_rotator_buttons0" name="params[rotator_buttons]" value="1" checked="checked">
+                <label for="params_rotator_buttons0" class="form-check-label">
+                    Show                </label>
+            </div>                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_rotator_buttons1" name="params[rotator_buttons]" value="0" >
+                <label for="params_rotator_buttons1" class="form-check-label">
+                    Hide                </label>
+            </div>            </div>
+</fieldset>
+</li>
+<li class="formelm"><label id="params_rotator_navigation-lbl" for="params_rotator_navigation">
+    Navigation bar</label>
+<select id="params_rotator_navigation" name="params[rotator_navigation]" class="form-select" aria-describedby="params_rotator_navigation-desc">
+	<option value="bottom" selected="selected">bottom</option>
+	<option value="top">top</option>
+	<option value="none">none</option>
+	<option value="both">both</option>
+</select>
+</li>
+<li class="formelm"><label id="params_rotator_links-lbl" for="params_rotator_links">
+    Paging buttons</label>
+<fieldset id="params_rotator_links">
+    <legend class="visually-hidden">
+        Paging buttons    </legend>
+    <div class="radio">
+                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_rotator_links0" name="params[rotator_links]" value="1" checked="checked">
+                <label for="params_rotator_links0" class="form-check-label">
+                    Show                </label>
+            </div>                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_rotator_links1" name="params[rotator_links]" value="0" >
+                <label for="params_rotator_links1" class="form-check-label">
+                    Hide                </label>
+            </div>            </div>
+</fieldset>
+</li>
+<li class="formelm"><label id="params_rotator_trigger-lbl" for="params_rotator_trigger">
+    Navigation trigger</label>
+<select id="params_rotator_trigger" name="params[rotator_trigger]" class="form-select" aria-describedby="params_rotator_trigger-desc">
+	<option value="click" selected="selected">click</option>
+	<option value="mouseover">mouse-over</option>
+</select>
+</li>
+<li class="formelm"><label id="params_rotator_step-lbl" for="params_rotator_step">
+    Trigger action step</label>
+<select id="params_rotator_step" name="params[rotator_step]" class="form-select" aria-describedby="params_rotator_step-desc">
+	<option value="single" selected="selected">single</option>
+	<option value="page">page</option>
+</select>
+</li>
+<li class="formelm"><label id="params_rotator_duration-lbl" for="params_rotator_duration">
+    Slide duration [ms]</label>
+
+
+    
+    <input
+        type="text"
+        name="params[rotator_duration]"
+        id="params_rotator_duration"
+        value="800"
+                class="form-control"  aria-describedby="params_rotator_duration-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_rotator_delay-lbl" for="params_rotator_delay">
+    Animation delay [ms]</label>
+
+
+    
+    <input
+        type="text"
+        name="params[rotator_delay]"
+        id="params_rotator_delay"
+        value="0"
+                class="form-control"  aria-describedby="params_rotator_delay-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_loop-lbl" for="params_loop">
+    Wrap around at end</label>
+<fieldset id="params_loop">
+    <legend class="visually-hidden">
+        Wrap around at end    </legend>
+    <div class="radio">
+                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_loop0" name="params[loop]" value="1" checked="checked">
+                <label for="params_loop0" class="form-check-label">
+                    On                </label>
+            </div>                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_loop1" name="params[loop]" value="0" >
+                <label for="params_loop1" class="form-check-label">
+                    Off                </label>
+            </div>            </div>
+</fieldset>
+</li>
+<li class="formelm"><label id="params_caption_visibility-lbl" for="params_caption_visibility">
+    Image caption visibility</label>
+<select id="params_caption_visibility" name="params[caption_visibility]" class="form-select" aria-describedby="params_caption_visibility-desc">
+	<option value="none">none</option>
+	<option value="mouseover" selected="selected">on mouse over only</option>
+	<option value="always">always</option>
+</select>
+</li>
+<li class="formelm"><label id="params_caption_position-lbl" for="params_caption_position">
+    Image caption position</label>
+<select id="params_caption_position" name="params[caption_position]" class="form-select" aria-describedby="params_caption_position-desc">
+	<option value="overlay-bottom">overlay bottom</option>
+	<option value="overlay-top">overlay top</option>
+	<option value="below">below</option>
+	<option value="above">above</option>
+</select>
+</li>
+</ul>
+</fieldset>
+<h3>Advanced settings</h3><fieldset class="panelform">
+<ul>
+<li class="formelm"><label id="params_download-lbl" for="params_download">
+    Download access level</label>
+<select id="params_download" name="params[download]" class="form-select" aria-describedby="params_download-desc">
+	<option value="" selected="selected">Disabled</option>
+	<option value="1">Public</option>
+	<option value="5">Guest</option>
+	<option value="2">Registered</option>
+	<option value="3">Special</option>
+	<option value="6">Super Users</option>
+</select>
+</li>
+<li class="formelm"><label id="params_metadata-lbl" for="params_metadata">
+    Metadata access level</label>
+<select id="params_metadata" name="params[metadata]" class="form-select" aria-describedby="params_metadata-desc">
+	<option value="" selected="selected">Disabled</option>
+	<option value="1">Public</option>
+	<option value="5">Guest</option>
+	<option value="2">Registered</option>
+	<option value="3">Special</option>
+	<option value="6">Super Users</option>
+</select>
+</li>
+<li class="formelm"><label id="params_protection-lbl" for="params_protection">
+    Image protection</label>
+<fieldset id="params_protection">
+    <legend class="visually-hidden">
+        Image protection    </legend>
+    <div class="radio">
+                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_protection0" name="params[protection]" value="1" >
+                <label for="params_protection0" class="form-check-label">
+                    Yes                </label>
+            </div>                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_protection1" name="params[protection]" value="0" checked="checked">
+                <label for="params_protection1" class="form-check-label">
+                    No                </label>
+            </div>            </div>
+</fieldset>
+</li>
+<li class="formelm"><label id="params_preview_margin-lbl" for="params_preview_margin">
+    Preview margin</label>
+<input type="text" name="params[preview_margin]" id="params_preview_margin" value="" class="form-control" size="6" placeholder="Default"/></li>
+<li class="formelm"><label id="params_preview_border_style-lbl" for="params_preview_border_style">
+    Preview border style</label>
+<select id="params_preview_border_style" name="params[preview_border_style]" class="form-select" aria-describedby="params_preview_border_style-desc">
+	<option value="" selected="selected">default</option>
+	<option value="none">none</option>
+	<option value="dotted">dotted</option>
+	<option value="dashed">dashed</option>
+	<option value="solid">solid</option>
+	<option value="double">double</option>
+	<option value="groove">3D grooved</option>
+	<option value="ridge">3D ridged</option>
+	<option value="inset">3D inset</option>
+	<option value="outset">3D outset</option>
+</select>
+</li>
+<li class="formelm"><label id="params_preview_border_width-lbl" for="params_preview_border_width">
+    Preview border width</label>
+<input type="text" name="params[preview_border_width]" id="params_preview_border_width" value="" class="form-control" size="6" placeholder="Default"/></li>
+<li class="formelm"><label id="params_preview_border_color-lbl" for="params_preview_border_color">
+    Preview border color</label>
+<input type="text" name="params[preview_border_color]" id="params_preview_border_color" value="none" placeholder="#rrggbb" class="form-control minicolors hex" data-position="default" data-control="hue" data-format="hex"/></li>
+<li class="formelm"><label id="params_preview_padding-lbl" for="params_preview_padding">
+    Preview padding</label>
+<input type="text" name="params[preview_padding]" id="params_preview_padding" value="" class="form-control" size="6" placeholder="Default"/></li>
+<li class="formelm"><label id="params_sort_criterion-lbl" for="params_sort_criterion">
+    Image sort criterion</label>
+<select id="params_sort_criterion" name="params[sort_criterion]" class="form-select" aria-describedby="params_sort_criterion-desc">
+	<option value="labels-filename" selected="selected">labels file (file name)</option>
+	<option value="labels-mtime">labels file (last modification time)</option>
+	<option value="labels-filesize">labels file (file size)</option>
+	<option value="labels-random">labels file (random order)</option>
+	<option value="labels">labels file only</option>
+	<option value="filename">file name</option>
+	<option value="mtime">last modification time</option>
+	<option value="filesize">file size</option>
+	<option value="random">random</option>
+</select>
+</li>
+<li class="formelm"><label id="params_sort_order-lbl" for="params_sort_order">
+    Image sort order</label>
+<select id="params_sort_order" name="params[sort_order]" class="form-select" aria-describedby="params_sort_order-desc">
+	<option value="0" selected="selected">ascending</option>
+	<option value="1">descending</option>
+</select>
+</li>
+<li class="formelm"><label id="params_depth-lbl" for="params_depth">
+    Recursion depth</label>
+<input
+    type="number"
+    inputmode="numeric"
+    name="params[depth]"
+    id="params_depth"
+    value="0"
+    class="form-control" aria-describedby="params_depth-desc"       min="-1"    ></li>
+<li class="formelm"><label id="params_watermark_position-lbl" for="params_watermark_position">
+    Watermark position</label>
+<select id="params_watermark_position" name="params[watermark_position]" class="form-select" aria-describedby="params_watermark_position-desc">
+	<option value="" selected="selected">none</option>
+	<option value="n">north</option>
+	<option value="ne">northeast</option>
+	<option value="e">east</option>
+	<option value="se">southeast</option>
+	<option value="s">south</option>
+	<option value="sw">southwest</option>
+	<option value="w">west</option>
+	<option value="nw">northwest</option>
+	<option value="c">center</option>
+</select>
+</li>
+<li class="formelm"><label id="params_watermark_x-lbl" for="params_watermark_x">
+    Distance from horizontal</label>
+
+
+    
+    <input
+        type="text"
+        name="params[watermark_x]"
+        id="params_watermark_x"
+        value=""
+                class="form-control"  aria-describedby="params_watermark_x-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_watermark_y-lbl" for="params_watermark_y">
+    Distance from vertical</label>
+
+
+    
+    <input
+        type="text"
+        name="params[watermark_y]"
+        id="params_watermark_y"
+        value=""
+                class="form-control"  aria-describedby="params_watermark_y-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_watermark_source-lbl" for="params_watermark_source">
+    Filename for watermark</label>
+
+
+    
+    <input
+        type="text"
+        name="params[watermark_source]"
+        id="params_watermark_source"
+        value="watermark.png"
+                class="form-control"  aria-describedby="params_watermark_source-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_thumb_width-lbl" for="params_thumb_width">
+    Thumbnail width</label>
+
+
+    
+    <input
+        type="text"
+        name="params[thumb_width]"
+        id="params_thumb_width"
+        value="60"
+                class="form-control"  aria-describedby="params_thumb_width-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_thumb_height-lbl" for="params_thumb_height">
+    Thumbnail height</label>
+
+
+    
+    <input
+        type="text"
+        name="params[thumb_height]"
+        id="params_thumb_height"
+        value="60"
+                class="form-control"  aria-describedby="params_thumb_height-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_thumb_crop-lbl" for="params_thumb_crop">
+    Crop when resizing</label>
+<fieldset id="params_thumb_crop">
+    <legend class="visually-hidden">
+        Crop when resizing    </legend>
+    <div class="radio">
+                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_thumb_crop0" name="params[thumb_crop]" value="1" >
+                <label for="params_thumb_crop0" class="form-check-label">
+                    Yes                </label>
+            </div>                    <div class="form-check">                                                <input class="form-check-input" type="radio" id="params_thumb_crop1" name="params[thumb_crop]" value="0" checked="checked">
+                <label for="params_thumb_crop1" class="form-check-label">
+                    No                </label>
+            </div>            </div>
+</fieldset>
+</li>
+<li class="formelm"><label id="params_lightbox_transition-lbl" for="params_lightbox_transition">
+    Lightbox transition effect</label>
+<select id="params_lightbox_transition" name="params[lightbox_transition]" class="form-select" aria-describedby="params_lightbox_transition-desc">
+	<option value="linear">linear</option>
+	<option value="quad">quadratic</option>
+	<option value="cubic">cubicular</option>
+	<option value="quart">quartetic</option>
+	<option value="quint">quintic</option>
+	<option value="expo">exponential</option>
+	<option value="circ">circular</option>
+	<option value="sine" selected="selected">sinusoidal</option>
+	<option value="back">back and forth</option>
+	<option value="bounce">bouncy</option>
+	<option value="elastic">elastic curve</option>
+</select>
+</li>
+<li class="formelm"><label id="params_rotator_alignment-lbl" for="params_rotator_alignment">
+    Rotator item alignment</label>
+<select id="params_rotator_alignment" name="params[rotator_alignment]" class="form-select" aria-describedby="params_rotator_alignment-desc">
+	<option value="c">center</option>
+	<option value="n">north</option>
+	<option value="ne">northeast</option>
+	<option value="e">east</option>
+	<option value="se">southeast</option>
+	<option value="s">south</option>
+	<option value="sw">southwest</option>
+	<option value="w">west</option>
+	<option value="nw">northwest</option>
+</select>
+</li>
+<li class="formelm"><label id="params_rotator_transition-lbl" for="params_rotator_transition">
+    Rotator transition effect</label>
+<select id="params_rotator_transition" name="params[rotator_transition]" class="form-select" aria-describedby="params_rotator_transition-desc">
+	<option value="linear">linear</option>
+	<option value="quad">quadratic</option>
+	<option value="cubic">cubicular</option>
+	<option value="quart">quartetic</option>
+	<option value="quint">quintic</option>
+	<option value="expo">exponential</option>
+	<option value="circ">circular</option>
+	<option value="sine" selected="selected">sinusoidal</option>
+	<option value="back">back and forth</option>
+	<option value="bounce">bouncy</option>
+	<option value="elastic">elastic curve</option>
+</select>
+</li>
+<li class="formelm"><label id="params_quality-lbl" for="params_quality">
+    Generated image quality</label>
+
+
+    
+    <input
+        type="text"
+        name="params[quality]"
+        id="params_quality"
+        value="85"
+                class="form-control"  aria-describedby="params_quality-desc"              >
+
+    
+
+</li>
+<li class="formelm"><label id="params_caption_source-lbl" for="params_caption_source">
+    Filename for labels</label>
+
+
+    
+    <input
+        type="text"
+        name="params[caption_source]"
+        id="params_caption_source"
+        value="labels.txt"
+                class="form-control"  aria-describedby="params_caption_source-desc"              >
+
+    
+
+</li>
+</ul>
+</fieldset>
+</form>
+<p><a target='_blank' href='https://hunyadi.info.hu/sigplus/sigplus-backend-settings'>More information on configuration settings</a></p>
+</body>
+</html>

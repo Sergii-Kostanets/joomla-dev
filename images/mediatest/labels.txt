@@ -1,0 +1,3 @@
+backgrounds-stars.jpg|Name 1|Description 1
+galaxy.jpg|Name 2|Description 2
+stars.jpeg|Name 3|Description 3
