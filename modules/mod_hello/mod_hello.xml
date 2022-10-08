@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+ <name>MOD_HELLO</name>
+ <creationDate>05.10.2022</creationDate>
+ <author>Sergii</author>
+ <authorEmail>sergiikostanets@gmail.com</authorEmail>
+ <authorUrl>sergiikostanets.netlify.app</authorUrl>
+ <copyright>Sergii Kostanets</copyright>
+ <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+ <version>0.0.2</version>
+ <description>MOD_HELLO_XML_DESCRIPTION</description>
+ <namespace>Joomla\Module\Hello</namespace>
+ <files>
+ <filename module="mod_hello">mod_hello.php</filename>
+ <folder>tmpl</folder>
+ <folder>Helper</folder>
+ <folder>language</folder>
+ <filename>mod_hello.xml</filename>
+ </files>
+
+<config>
+<fields name="params">
+
+<fieldset name="basic">
+<!-- type="url" -->
+<field
+name="domain"
+label="MOD_HELLO_FIELD_URL_LABEL"
+filter="url"
+/>
+</fieldset>
+
+<!-- <fieldset name="advanced">
+
+<field
+name="layout"
+type="modulelayout"
+label="JFIELD_ALT_LAYOUT_LABEL"
+class="custom-select"
+/>
+
+<field
+name="moduleclass_sfx"
+type="textarea"
+label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+rows="3"
+/>
+
+<field
+name="cache"
+type="list"
+label="COM_MODULES_FIELD_CACHING_LABEL"
+default="0"
+>
+<option value="1">JGLOBAL_USE_GLOBAL</option>
+<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+</field>
+
+<field
+name="cache_time"
+type="number"
+label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+default="0"
+/>
+
+<field
+name="cachemode"
+type="hidden"
+default="itemid"
+>
+<option value="itemid"></option>
+</field> -->
+
+<!-- </fieldset> -->
+
+</fields>
+</config>
+
+</extension>

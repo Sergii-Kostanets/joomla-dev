@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+<name>mod_firstmodule</name>
+<author>Joomla! Project</author>
+<creationDate>November 2018</creationDate>
+<copyright>Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.</copyright>
+<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+<authorEmail>your_email_goes_here</authorEmail>
+<authorUrl>www.joomlashack.com</authorUrl>
+<version>0.0.1</version>
+<description>My First Module</description>
+<!-- This section defined which files and folders will be part of this module -->
+<files>
+<filename module="mod_firstmodule">mod_firstmodule.php</filename>
+<folder>tmpl</folder>
+<filename>helper.php</filename>
+</files>
+<!-- This section accesses the language files that are in the core language directory -->
+<languages>
+<language tag="en_GB">en_GB.mod_firstmodule.ini</language>
+<language tag="en_GB">en_GB.mod_firstmodule.sys.ini</language>
+</languages>
+<config>
+<fields name="params">
+<fieldset name="basic">
+<field name="parent" type="category" extension="com_content" published="" label="First Module Label" description="My First Module Ever"/>
+</fieldset>
+</fields>
+</config>
+</extension>

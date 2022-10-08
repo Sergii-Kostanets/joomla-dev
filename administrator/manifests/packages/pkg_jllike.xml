@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.8" method="upgrade">
+	<name>JL Like</name>
+	<packagename>jllike</packagename>
+	<author>JoomLine</author>
+	<creationDate>08.07.2021</creationDate>
+	<copyright>(C) 2012-2021 by Artem Zhukov, Arkadiy Sedelnikov and Vadim Kunicin(https://joomline.ru)</copyright>
+	<license>GNU/GPL: http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>sale@joomline.ru</authorEmail>
+	<authorUrl>https://joomline.ru</authorUrl>
+	<version>4.1.0</version>
+	<url>https://joomline.ru</url>
+	<packager>JoomLine.ru</packager>
+	<packagerurl>https://joomline.ru</packagerurl>
+	<description>PLG_JLLIKE_DESC_ALL</description>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.pkg_jllike.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.pkg_jllike.sys.ini</language>
+	</languages>
+	<files>
+        <folder type="plugin" id="jllike" group="content" client="site">jllike</folder>
+        <folder type="plugin" id="jllikeads" group="adsmanagercontent" client="site">jllikeads</folder>
+        <folder type="plugin" id="jllikejshop" group="jshoppingproducts" client="site">jllikejshop</folder>
+		<folder type="plugin" id="jllike" group="k2" client="site">jllikek2</folder>
+	</files>
+</extension>
