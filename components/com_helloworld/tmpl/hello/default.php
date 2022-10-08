@@ -14,5 +14,5 @@ use Joomla\CMS\Language\Text;
 defined('_JEXEC') or die('Restricted Access');
 ?>
 <h2><?= Text::_('COM_HELLOWORLD_MSG_HELLO_WORLD') ?></h2>
-<p><span class="icon-joomla"> </span></p>
+<p><span class="icon-joomla large-icon"> </span></p>
 <p><?= $this->getModel()->getItem()->message; ?></p>
